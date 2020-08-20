@@ -9,8 +9,6 @@ script:
 
 deploy:
   provider: script
-  cleanup: true
-  edge: true
   script: bash docker_push.sh
   on:
     branch: master
