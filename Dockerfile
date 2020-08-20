@@ -4,4 +4,4 @@ WORKDIR /hello
 
 COPY ./ /hello
 
-CMD['python', 'manage.py' ,'runserver']
+CMD ['python', 'manage.py' ,'runserver']
