@@ -6,4 +6,4 @@ sudo chown $USER:docker ~/.docker
 sudo chown $USER:docker ~/.docker/config.json
 sudo chmod g+rw ~/.docker/config.json
 
-docker-compose docker-compose.yml
+sudo docker-compose docker-compose.yml
