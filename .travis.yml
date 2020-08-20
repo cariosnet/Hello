@@ -6,3 +6,9 @@ services:
 script:
   - docker build -t hello .
   - docker run -d -p 80:8000 --name django hello
+
+deploy:
+  provider: script
+  script: bash docker_push.sh
+  on:
+    branch: master
