@@ -5,5 +5,3 @@ sudo docker push muhammadzulfa/hello:latest
 sudo chown $USER:docker ~/.docker
 sudo chown $USER:docker ~/.docker/config.json
 sudo chmod g+rw ~/.docker/config.json
-
-sudo docker-compose docker-compose.yml
