@@ -4,4 +4,8 @@ WORKDIR /hello
 
 COPY ./ /hello
 
-CMD ['python', 'manage.py' ,'runserver']
+RUN pip install pipenv
+
+RUN pip install -r requirements.txt
+
+CMD ["python", "manage.py" ,"runserver"]
