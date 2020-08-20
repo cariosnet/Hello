@@ -1,4 +1,9 @@
 sudo docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
-docker tag hello $DOCKER_USERNAME/hello:latest
+sudo docker tag hello $DOCKER_USERNAME/hello:latest
 sudo docker push muhammadzulfa/hello:latest
-docker-compose
+
+sudo chown $USER:docker ~/.docker
+sudo chown $USER:docker ~/.docker/config.json
+sudo chmod g+rw ~/.docker/config.json
+
+docker-compose docker-compose.yml
