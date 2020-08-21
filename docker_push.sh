@@ -6,4 +6,4 @@ sudo chown $USER:docker ~/.docker
 sudo chown $USER:docker ~/.docker/config.json
 sudo chmod g+rw ~/.docker/config.json
 
-ssh root@206.189.44.192 'docker-compose'
+ssh root@206.189.44.192 'docker-compose up'
