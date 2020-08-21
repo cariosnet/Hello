@@ -1,9 +1,5 @@
 services:
   hello:
     image: muhammadzulfa/hello:latest
-  lb:
-    build: ./hello-lb
-    depends_on:
-      - hello
     ports:
     - "80:8000"
